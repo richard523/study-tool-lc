@@ -26,9 +26,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: |
-          pnpm run build
-          touch ./dist/.nojekyll
+        run: pnpm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
