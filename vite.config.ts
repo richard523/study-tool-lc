@@ -3,8 +3,11 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/study-tool-leetcode/',
+  base: '',
   plugins: [react()],
+  build: {
+    assetsDir: '',
+  },
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
